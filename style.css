@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --bp-tablet: 768px;
+    --bp-laptop: 1024px;
+    --bp-desktop: 1200px;
+
+    --color-header: #031531;
+    --color-text: #FFFFFF;
+}
+
+body{
+    color:var(--color-text);
+    background-color: var(--color-header);
+}
+.site-header{
+    background-color: var(--color-header);
+    position: relative;
+    border-bottom: 1px var(--color-header ) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.second {
+    display:flex;
+    gap: 3rem;
+}
+
+.nav-main a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.nav-second a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.hero {
+    background-image: url('pictures/home-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
