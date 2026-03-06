@@ -1,0 +1,160 @@
+$dark-color: #020D1E;
+$light-color: #0C3469;
+$accent-color: #1955A6;
+$main-color: #031531;
+$text-color: #FFFF;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: $text-color;
+}
+
+.site-header{
+    background-color: $dark-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 21px;
+
+    .logo {
+        width: 260px;
+        height: 51.55px;
+    }
+    .main{
+        .nav-main{
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            padding-right: 321px;
+            font-size: 14px;
+            a {
+                color: $text-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 12px;
+
+        .nav-second {
+            display: flex;
+            gap: 2rem;
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+        .eshop {
+            background-color: $accent-color;
+            color: $text-color;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+.hero {
+    background-image: url('/pictures/home-picture.jpg');
+    background-color: #00000080;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 112px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 0 225px 24px 225px;
+
+    .hero-content {
+        color: $text-color;
+       
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            font-style: bold;
+        }
+        h2 {
+            font-size: 92px;
+            font-weight: 700;
+            font-style: bold;
+            margin-bottom: 80px;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;;
+        }
+    }
+
+    .hero-slider {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 96px;
+
+        .slider-dots {
+            display: flex;
+            gap: 15px;
+
+            .dot {
+                width: 35px;
+                height: 2px;
+                background-color: rgba(255, 255, 255, 0.3);
+                cursor: pointer;
+                transition: 0.3s;
+
+                &.active {
+                    background-color: $accent-color;
+                }
+
+                &:hover {
+                    background-color: $text-color;
+                }
+            }
+        }
+
+        .slider-arrows {
+            display: flex;
+
+            .arrow {
+                width: 50px;
+                height: 50px;
+                border: none;
+                color: $text-color;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+
+                &.left {
+                    background-color: #000000;
+                }
+
+                &.right {
+                    background-color: $accent-color;
+                }
+
+                &:hover {
+                    filter: brightness(1.2); 
+                }
+            }
+        }
+    }
+}
