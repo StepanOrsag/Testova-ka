@@ -388,3 +388,83 @@ body {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
 }
+
+.services {
+  height: 624px;
+  padding: 0 128px;
+  background-color: #0C3469;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 988;
+}
+.services .services-text {
+  padding: 160px 120px;
+}
+.services .services-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+  padding-bottom: 28px;
+}
+.services .services-text p {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 28px;
+}
+.services .services-text #cursive {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+.services .services-text .services-offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 32px;
+}
+.services .services-text .services-offers a {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: bold;
+  color: #6094F8;
+}
+.services .services-text .services-offers .line {
+  border-right: 1px solid #6094F8;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.services .services-text .services-offers .line:last-child {
+  border-right: none;
+}
+.services .services-text .services-offers .line:first-child {
+  padding-left: 0;
+}
+.services .services-button {
+  width: 452px;
+  padding-top: 360px;
+}
+.services .services-button .services-link {
+  text-decoration: none;
+  color: white;
+  padding: 20px 36px;
+  border: 2px solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.services .services-button .services-link:hover {
+  background-color: white;
+  color: #1955A6;
+}

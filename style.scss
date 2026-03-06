@@ -349,3 +349,76 @@ body {
         }
     }
 }
+
+.services {
+    height: 624px;
+    padding: 0 128px;
+    background-color: $light-color;
+    display: flex;
+    flex-direction: row;
+    width: 988;
+
+    .services-text {
+        padding: 160px 120px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            font-style: bold;
+            padding-bottom: 28px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            padding-bottom: 28px;
+        }
+        #cursive{
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .services-offers {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                padding-bottom: 32px;
+
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                font-style: bold;
+                color:#6094F8; 
+            }
+            .line {
+                border-right: 1px solid #6094F8;
+                padding-right: 16px;
+                padding-left: 16px;
+
+                &:last-child {
+                    border-right: none;
+                }
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .services-button {
+        width: 452px;
+        padding-top: 360px;
+
+        .services-link {
+            text-decoration: none;
+            color: $text-color;
+            padding: 20px 36px;
+            border: 2px solid $text-color;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $text-color;
+                color: $accent-color;
+            }
+        }
+    }
+}
