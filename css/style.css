@@ -276,3 +276,115 @@ body {
   font-style: normal;
   opacity: 0.8;
 }
+
+.materials {
+  height: 960px;
+  padding: 0px 128px;
+  background-image: url(/pictures/materials-bg.jpg);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 848px;
+  padding-top: 332px;
+}
+.materials .materials-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+  padding-bottom: 28px;
+}
+.materials .materials-text p {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 64px;
+}
+.materials .materials-text a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 36px;
+  border: 2px solid white;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.materials .materials-text a:hover {
+  background-color: white;
+  color: #1955A6;
+}
+.materials .materials-slider {
+  padding-top: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 394px;
+}
+.materials .materials-slider .materials-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.materials .materials-slider .materials-dots .dot {
+  width: 35px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.materials .materials-slider .materials-dots .dot.active {
+  background-color: #1955A6;
+}
+.materials .materials-slider .materials-dots .dot:hover {
+  background-color: white;
+}
+.materials .materials-slider .materials-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.materials .materials-slider .materials-arrows .arrow {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.materials .materials-slider .materials-arrows .arrow.left {
+  background-color: #000000;
+}
+.materials .materials-slider .materials-arrows .arrow.right {
+  background-color: #1955A6;
+}
+.materials .materials-slider .materials-arrows .arrow:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
