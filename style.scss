@@ -53,6 +53,7 @@ body {
             a {
                 text-decoration: none;
                 color: $text-color;
+                opacity: 0.6;
             }
         }
         .eshop {
@@ -96,8 +97,10 @@ body {
         p{
             display: flex;
             align-items: center;
+            font-weight: 700;
+            font-style:bold;
             gap: 15px;
-            font-size: 14px;;
+            font-size: 14px;
         }
     }
 
@@ -156,5 +159,91 @@ body {
                 }
             }
         }
+    }
+}
+
+.introduction {
+    background-color: $dark-color;
+    height: 628px;
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 128px;
+
+    .about-us {
+        flex: 1;
+        border-right: 1px solid #FFFFFF1A;
+        padding-left: 97px;
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+
+        &::before{
+            content:"";
+            position: absolute;
+            left: -2px;
+            top:0;
+            width: 2px;
+            height: 45%;
+            background-color: #6094F8;
+        }
+        h1 {
+            padding-bottom: 40px;
+            font-size: 48px;
+            font-weight: 700;
+            font-style: bold;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            padding-bottom: 75px;
+            opacity: 0.8;
+        }
+        .learn-more {
+            background-color: $accent-color;
+            color: $text-color;
+            text-decoration: none;
+            padding: 20px 30px;
+            font-size: 16px;
+            font-weight: 700;
+            font-style: bold;
+            display: inline-block;
+        }
+    }
+    .our-abilities {
+        flex: 1;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        padding-left: 5%;
+
+        >div {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas: "icon title" "icon text";
+            column-gap: 25px;
+            row-gap:8px;
+
+            img {
+                grid-area:icon;
+                margin-top: 5px;
+            }
+
+            h2 {
+                grid-area: title;
+                font-size: 18px;
+                font-weight: 700;
+                font-style: bold;
+            }
+
+            p {
+                grid-area: text;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                opacity: 0.8;
+            }
+        }
+
     }
 }

@@ -65,6 +65,7 @@ body {
 .site-header .second .nav-second a {
   text-decoration: none;
   color: white;
+  opacity: 0.6;
 }
 .site-header .second .eshop {
   background-color: #1955A6;
@@ -113,6 +114,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 700;
+  font-style: bold;
   gap: 15px;
   font-size: 14px;
 }
@@ -179,4 +182,97 @@ body {
 .hero .hero-slider .slider-arrows .arrow:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
+}
+
+.introduction {
+  background-color: #020D1E;
+  height: 628px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 128px 128px;
+}
+.introduction .about-us {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding-left: 97px;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+.introduction .about-us::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 2px;
+  height: 45%;
+  background-color: #6094F8;
+}
+.introduction .about-us h1 {
+  padding-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+}
+.introduction .about-us p {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 75px;
+  opacity: 0.8;
+}
+.introduction .about-us .learn-more {
+  background-color: #1955A6;
+  color: white;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: bold;
+  display: inline-block;
+}
+.introduction .our-abilities {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 75px;
+  padding-left: 5%;
+}
+.introduction .our-abilities > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "icon title" "icon text";
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 8px;
+}
+.introduction .our-abilities > div img {
+  grid-area: icon;
+  margin-top: 5px;
+}
+.introduction .our-abilities > div h2 {
+  grid-area: title;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: bold;
+}
+.introduction .our-abilities > div p {
+  grid-area: text;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.8;
 }
