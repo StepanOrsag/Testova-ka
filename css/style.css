@@ -12,7 +12,7 @@ body {
 }
 
 .site-header {
-  background-color: #020D1E;
+  background-color: #031531;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +185,7 @@ body {
 }
 
 .introduction {
-  background-color: #020D1E;
+  background-color: #031531;
   height: 628px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,7 +483,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #020D1E;
+  background-color: #031531;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +626,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #020D1E;
+  background-color: #031531;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,4 +712,103 @@ body {
 }
 .more .more-text .accordion .accordion-item .accordion-content a:hover {
   text-decoration: underline;
+}
+
+.current {
+  height: 732px;
+  padding: 0 128px;
+  background-color: #020D1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.current .current-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  background-image: url("/pictures/current-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 128px;
+  background-clip: content-box;
+  height: 100%;
+}
+.current .current-img::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 128px;
+  bottom: 128px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+}
+.current .current-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 848px;
+  padding: 0 128px;
+}
+.current .current-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  font-style: bold;
+  padding-bottom: 40px;
+}
+.current .current-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: bold;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.current .current-text .date-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+.current .current-text .date-link p {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  opacity: 0.5;
+  padding-bottom: 20px;
+}
+.current .current-text .date-link a {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  color: #1955A6;
+}
+.current .current-text p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 48px;
+}
+.current .current-text .archiv-link {
+  font-size: 14px;
+  background-color: #1955A6;
+  color: white;
+  padding: 20px 36px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.current .current-text .archiv-link:hover {
+  background-color: white;
+  color: #1955A6;
 }
