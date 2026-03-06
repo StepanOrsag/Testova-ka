@@ -422,3 +422,118 @@ body {
         }
     }
 }
+
+.realizations {
+    height: 960px;
+    display: flex;
+    flex-direction: row;
+
+    .realizations-text {
+        flex:1;
+        background-color: $dark-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding-left: 128px;
+        padding-right: 80px;
+
+        .text-content {
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+                padding-bottom: 40px;
+            }
+            .hotel-fabrika {
+                font-size: 32px;
+                color: #6094F8;
+                font-weight: 700;
+                text-decoration: underline; 
+                display: block; 
+                padding-bottom: 20px;
+            }
+            p {
+                font-size: 16px; 
+                font-weight: 400;
+                padding-bottom: 40px;
+                max-width: 500px;
+            } 
+            .realizations-link {
+                text-decoration: none;
+                color: $text-color;
+                padding: 20px 36px;
+                background-color: #1955A6;
+                font-size: 14px;
+                font-weight: 700;
+                display: inline-block;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $text-color;
+                    color: $accent-color;
+                }
+            }
+        }
+        .realizations-dots{
+            padding-top: 400px;
+            display: flex;
+            gap: 15px;
+
+            .dot {
+                width: 35px;
+                height: 2px;
+                background-color: rgba(255, 255, 255, 0.3);
+                cursor: pointer;
+                transition: 0.3s;
+
+                &.active {
+                    background-color: $accent-color;
+                }
+
+                &:hover {
+                    background-color: $text-color;
+                }
+            }
+        }
+    }
+    .realizations-image {
+        flex: 1;
+        background-image: url('/pictures/realizations-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .realizations-arrows {
+            padding: 784px 120px 0px 720px;
+            display: flex;
+
+            .arrow {
+                width: 50px;
+                height: 50px;
+                border: none;
+                color: $text-color;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+
+                &.left {
+                    background-color: #000000;
+                }
+
+                &.right {
+                    background-color: $accent-color;
+                }
+
+                &:hover {
+                    filter: brightness(1.2); 
+                }
+            }
+        }
+    }
+}

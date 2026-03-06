@@ -468,3 +468,135 @@ body {
   background-color: white;
   color: #1955A6;
 }
+
+.realizations {
+  height: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.realizations .realizations-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #020D1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 128px;
+  padding-right: 80px;
+}
+.realizations .realizations-text .text-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+.realizations .realizations-text .text-content .hotel-fabrika {
+  font-size: 32px;
+  color: #6094F8;
+  font-weight: 700;
+  text-decoration: underline;
+  display: block;
+  padding-bottom: 20px;
+}
+.realizations .realizations-text .text-content p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 40px;
+  max-width: 500px;
+}
+.realizations .realizations-text .text-content .realizations-link {
+  text-decoration: none;
+  color: white;
+  padding: 20px 36px;
+  background-color: #1955A6;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.realizations .realizations-text .text-content .realizations-link:hover {
+  background-color: white;
+  color: #1955A6;
+}
+.realizations .realizations-text .realizations-dots {
+  padding-top: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.realizations .realizations-text .realizations-dots .dot {
+  width: 35px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.realizations .realizations-text .realizations-dots .dot.active {
+  background-color: #1955A6;
+}
+.realizations .realizations-text .realizations-dots .dot:hover {
+  background-color: white;
+}
+.realizations .realizations-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url("/pictures/realizations-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.realizations .realizations-image .realizations-arrows {
+  padding: 784px 120px 0px 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.realizations .realizations-image .realizations-arrows .arrow {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.realizations .realizations-image .realizations-arrows .arrow.left {
+  background-color: #000000;
+}
+.realizations .realizations-image .realizations-arrows .arrow.right {
+  background-color: #1955A6;
+}
+.realizations .realizations-image .realizations-arrows .arrow:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
