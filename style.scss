@@ -4,6 +4,7 @@ $light-color: #0C3469;
 $accent-color: #1955A6;
 $main-color: #031531;
 $text-color: #FFFF;
+$hover-color: #E30613;
 
 * {
   box-sizing: border-box;
@@ -38,15 +39,31 @@ body {
             a {
                 color: $text-color;
                 text-decoration: none;
+                transition: 0.3s;
+
+                &:hover{
+                    color: $accent-color;
+                }
             }
         }
     }
     .second {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 2rem;
         font-size: 12px;
+
+        .search-btn{
+            border: none;
+            background-color: $dark-color;
+        }
+        .language-switch{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
 
         .nav-second {
             display: flex;
@@ -55,6 +72,11 @@ body {
                 text-decoration: none;
                 color: $text-color;
                 opacity: 0.6;
+                transition: 0.3s;
+
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
         .eshop {
@@ -62,8 +84,20 @@ body {
             color: $text-color;
             padding: 10px 20px;
             text-decoration: none;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: $hover-color;
+            }
         }
     }
+}
+
+.hero-img{
+    position: absolute;
+    top: 376.45px;
+    bottom: 215px;
+    right: 1625px;
 }
 
 .hero {
@@ -208,6 +242,12 @@ body {
             font-weight: 700;
             font-style: bold;
             display: inline-block;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: $text-color;
+                color: $accent-color;
+            }
         }
     }
     .our-abilities {
@@ -259,9 +299,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    padding-left: 848px;
-    padding-top: 332px;
+    flex-direction: row;
+
+    .nothing {
+        flex:1;
+    }
+
+    .content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     
     .materials-text {
         h1 {
@@ -357,7 +407,14 @@ body {
     background-color: $light-color;
     display: flex;
     flex-direction: row;
-    width: 988;
+    position:relative;
+
+    .services-img{
+    position: absolute;
+    top: 165px;
+    right: 1663px;
+    bottom: 162px;
+}
 
     .services-text {
         padding: 160px 120px;
@@ -572,6 +629,11 @@ body {
             color: $text-color;
             padding: 20px 36px;
             text-decoration: none;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: $hover-color;
+            }
         }
 
         h1 {
@@ -725,6 +787,367 @@ body {
                 background-color: $text-color;
                 color: $accent-color;
             }
+        }
+    }
+}
+
+.footer {
+    height: 1298px;
+    background-color: $dark-color;
+   
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+
+        .usps {
+            height: 150px;
+            padding: 48px 160px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border-bottom: 1px solid #FFFFFF1A;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .crts {
+            height: 154px;
+            padding: 32px 256px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #FFFFFF1A;
+
+            .crts-images {
+                display: flex;
+                gap: 48px;
+            }
+        }
+        .main {
+            height: 796px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom: 1px solid #FFFFFF1A;
+
+            .main-form {
+                display: flex;
+                height: 796px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .form-part{
+                    display:flex;
+                    flex-direction: column;
+                    height: 514px;
+                    gap: 32px;
+                    border-bottom: 1px solid #FFFFFF1A;
+                    justify-content: center;
+
+                    h2{
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-style: bold;
+                    }
+
+                    form {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas: "left right" "bottom bottom";
+                        height: 188px;
+                        width: 592px;
+                        gap: 16px;
+
+                        .left-column {
+                            grid-area: left;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                        }
+                        .right-column {
+                            grid-area: right;
+                        }
+                        .form-end {
+                            grid-area: bottom;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 32px;
+                        }
+                        .input {
+                            position: relative;
+                            width: 100%;
+
+                            .star{
+                                position: absolute;
+                                right: 20px;
+                                top: 15px;
+                                color: $accent-color;
+                            }
+                        }
+                        .input input, .input textarea {
+                            width: 100%;
+                            background-color: #1e2a40;
+                            border: none;
+                            color: #ffffff;
+                            font-size: 14px;
+                            padding: 18px 16px;
+                            outline: none;
+                            box-sizing: border-box;
+                        }
+                        .input input{
+                            min-height: 52px;
+                        }
+                        .input textarea{
+                            min-height: 188px;
+                        }
+
+                        .form-end {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .consent{
+                                color:$text-color;
+                                opacity: 0.5;
+                                font-size: 12px;
+                                font-style: 500;
+
+                                a {
+                                    color: $text-color;
+                                    opacity: 0.5;
+                                }
+                            }
+                            .submit-btn{
+                                background-color: $accent-color;
+                                color: $text-color;
+                                padding: 16px 28px;
+                                transition: 0.3s;
+
+                                &:hover{
+                                    background-color: $text-color;
+                                    color: $accent-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                .partner-part{
+                    height: 282px;
+                    width: 592px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        h2{
+                            font-size: 16px;
+                            font-weight: 500;
+                            padding-bottom: 16px;
+                        }
+                        .perfo-linea{
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row;
+                            align-items: center;
+
+                            h1{
+                                font-size: 20px;
+                                font-weight: 700;
+                                font-style: bold;
+                            }
+                            p{
+                                font-size: 16px;
+                                font-weight: 400;
+                                padding-top: 5px;
+                            }
+                            .perfo-linea-btn{
+                                a{
+                                    padding: 16px 28px;
+                                    text-decoration: none;
+                                    background-color: #E30613;
+                                    color: $text-color;
+                                    transition: 0.3s;
+
+                                    &:hover{
+                                        background-color: $accent-color;
+                                        color: $text-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-info{
+                display: flex;
+                flex-direction: row;
+                gap: 64px;
+                .contact-left{
+                    max-width: 256px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 46px;
+
+                    .showroom{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        h1{
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-style: bold;
+                        }
+                        p{
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+                    }
+                    .open-times{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        h2 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: bold;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+                    }
+                    .contact-info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .telephone {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 16px;
+                        }
+                        .email{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 16px;
+                        }
+                    }
+                    .social-sites {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                    }
+                    .contact-left-links {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        font-size: 12px;
+
+                        .all-contacts {
+                            width: 183px;
+                            text-decoration: none;
+                            padding: 16px 28px;
+                            background-color: #1955A6;
+                            color: $text-color;
+                            text-align: center;
+                            transition: 0.3s;
+
+                            &:hover{
+                                background-color: $text-color;
+                                color: $accent-color;
+                            }
+                        }
+                        .eshop{
+                            width: 103px;
+                            text-decoration: none;
+                            padding: 16px 28px;
+                            background-color: #1955A6;
+                            color: $text-color;
+                            text-align: center;
+                            transition: 0.3s;
+
+                            &:hover{
+                                background-color: $text-color;
+                                color: $accent-color;
+                            }
+                        }
+                    }
+                }
+                .contact-right{
+                    max-width: 256px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 48px;
+
+                    .expedition {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        h1 {
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-style: bold;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+                        .find-on-map {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $text-color;
+                            opacity: 0.5;
+                        }
+                    }
+                    .additional-info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        h1{
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-style: bold;
+                        }
+                        a{
+                            font-size: 14px;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: $text-color;
+                            opacity: 0.5;
+                        }
+                        p{
+                            padding-top: 14px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            opacity: 0.5; 
+                        }
+                    }
+                }
+            }
+        }
+        .copyetc {
+            height: 198px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
