@@ -644,7 +644,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 1218px;
+  gap: 380%;
   left: 120px;
   top: 784px;
 }
