@@ -30,11 +30,14 @@ body {
         height: 51.55px;
     }
     .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
         .nav-main{
             display: flex;
             justify-content: flex-start;
             gap: 2rem;
-            padding-right: 321px;
             font-size: 14px;
             a {
                 color: $text-color;
