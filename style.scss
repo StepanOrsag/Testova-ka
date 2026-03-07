@@ -555,9 +555,10 @@ body {
     }
     .selector{
         position: absolute;
+        width: 80%;
         display: flex;
         flex-direction: row;
-        gap: 380%;
+        justify-content: space-between;
         left:120px;
         top: 784px;
 
