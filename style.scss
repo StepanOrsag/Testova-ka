@@ -492,6 +492,7 @@ body {
     height: 960px;
     display: flex;
     flex-direction: row;
+    position: relative;
 
     .realizations-text {
         flex:1;
@@ -541,8 +542,26 @@ body {
                 }
             }
         }
+    }
+    .realizations-image {
+        flex: 1;
+        background-image: url('/pictures/realizations-bg.png');
+        min-width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+    }
+    .selector{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 1218px;
+        left:120px;
+        top: 784px;
+
         .realizations-dots{
-            padding-top: 400px;
             display: flex;
             gap: 15px;
 
@@ -562,19 +581,9 @@ body {
                 }
             }
         }
-    }
-    .realizations-image {
-        flex: 1;
-        background-image: url('/pictures/realizations-bg.png');
-        min-width: 50%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
 
         .realizations-arrows {
-            padding: 784px 120px 0px 720px;
-            display: flex;
+           display: flex;
 
             .arrow {
                 width: 50px;

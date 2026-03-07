@@ -567,6 +567,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 .realizations .realizations-text {
   -webkit-box-flex: 1;
@@ -623,27 +624,6 @@ body {
   background-color: white;
   color: #1955A6;
 }
-.realizations .realizations-text .realizations-dots {
-  padding-top: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
-}
-.realizations .realizations-text .realizations-dots .dot {
-  width: 35px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.realizations .realizations-text .realizations-dots .dot.active {
-  background-color: #1955A6;
-}
-.realizations .realizations-text .realizations-dots .dot:hover {
-  background-color: white;
-}
 .realizations .realizations-image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -655,13 +635,45 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
-.realizations .realizations-image .realizations-arrows {
-  padding: 784px 120px 0px 720px;
+.realizations .selector {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1218px;
+  left: 120px;
+  top: 784px;
+}
+.realizations .selector .realizations-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.realizations .selector .realizations-dots .dot {
+  width: 35px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.realizations .selector .realizations-dots .dot.active {
+  background-color: #1955A6;
+}
+.realizations .selector .realizations-dots .dot:hover {
+  background-color: white;
+}
+.realizations .selector .realizations-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.realizations .realizations-image .realizations-arrows .arrow {
+.realizations .selector .realizations-arrows .arrow {
   width: 50px;
   height: 50px;
   border: none;
@@ -680,13 +692,13 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.realizations .realizations-image .realizations-arrows .arrow.left {
+.realizations .selector .realizations-arrows .arrow.left {
   background-color: #000000;
 }
-.realizations .realizations-image .realizations-arrows .arrow.right {
+.realizations .selector .realizations-arrows .arrow.right {
   background-color: #1955A6;
 }
-.realizations .realizations-image .realizations-arrows .arrow:hover {
+.realizations .selector .realizations-arrows .arrow:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
 }
