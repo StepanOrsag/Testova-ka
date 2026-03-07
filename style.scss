@@ -406,11 +406,14 @@ body {
 
 .services {
     height: 624px;
-    padding: 0 128px;
+    padding-left: 240px;
+    padding-right: 128px;
     background-color: $light-color;
     display: flex;
     flex-direction: row;
     position:relative;
+    align-items: center;
+    gap: 128px;
 
     .services-img{
     position: absolute;
@@ -420,7 +423,7 @@ body {
 }
 
     .services-text {
-        padding: 160px 120px;
+        flex:1;
 
         h1 {
             font-size: 48px;
@@ -466,8 +469,9 @@ body {
         }
     }
     .services-button {
-        width: 452px;
-        padding-top: 360px;
+        position: absolute;
+        bottom: 128px;
+        right: 128px;
 
         .services-link {
             text-decoration: none;
