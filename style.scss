@@ -222,14 +222,14 @@ body {
         width: 100%;
 
         .logo {
-            width: 260px;
+            width: 80%;
             height: 51.55px;
         }
         
         .main {
             display: flex;
             align-items: center;
-            gap: 5rem;
+            gap: 5%;
             padding-left: 5.8%;
 
             .nav-main {
@@ -257,6 +257,9 @@ body {
             font-size: 12px;
             padding-right: 5.8%;
 
+            .hamburger-menu{
+                display: none;
+            }
             .search-btn {
                 border: none;
                 background-color: $dark-color;
