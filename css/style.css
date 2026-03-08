@@ -1439,6 +1439,140 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .materials {
+    height: 580px;
+    background-image: url(/pictures/materials-bg.jpg);
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .materials .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .materials .content .materials-text {
+    height: 258px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+  .materials .content .materials-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .materials .content .materials-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .materials .content .materials-text a {
+    padding: 20px 36px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .materials .content .materials-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 32px;
+  }
+  .materials .content .materials-slider .materials-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .materials .content .materials-slider .materials-dots .dot {
+    width: 35px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .materials .content .materials-slider .materials-dots .dot.active {
+    background-color: #1955A6;
+  }
+  .materials .content .materials-slider .materials-arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2px;
+  }
+  .materials .content .materials-slider .materials-arrows .arrow {
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .materials .content .materials-slider .materials-arrows .arrow.left {
+    background-color: #000000;
+  }
+  .materials .content .materials-slider .materials-arrows .arrow.right {
+    background-color: #1955A6;
+  }
   .services {
     height: 680px;
     background-color: #0C3469;
