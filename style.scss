@@ -1201,6 +1201,84 @@ body {
 //Mobile style
 @media (max-width: 767px) {
 
+    .services{
+        height: 680px;
+        background-color: $light-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+        .services-text{
+            height: 400px;
+            max-width: 83.3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 14px;
+
+            h1{
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 44px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+            .services-offers{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1px;
+                line-height: 28px;
+
+                a{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $accent-color;
+                }
+            }
+        }
+         .services-button{
+            display:flex;
+            width: 100%;
+            max-width: 83.3%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            a{
+                padding: 20px 36px;
+                text-decoration: none;
+                color: $text-color;
+                border: 2px solid $text-color;
+            }
+        }
+        #cursive{
+            font-size: 12px;
+            font-weight: 400;
+            font-size: italic;
+            width: 100%;
+            max-width: 83.3%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            a{
+                color:$text-color;
+            }
+        }
+
+        .services-img{
+            position: absolute; 
+            opacity: 25%;
+            right: 40%;
+        }
+    }
+
     .realizations{
         height: 848px;
         display: flex;

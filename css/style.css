@@ -1439,6 +1439,111 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .services {
+    height: 680px;
+    background-color: #0C3469;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .services .services-text {
+    height: 400px;
+    max-width: 83.3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 14px;
+  }
+  .services .services-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  .services .services-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .services .services-text .services-offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    line-height: 28px;
+  }
+  .services .services-text .services-offers a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1955A6;
+  }
+  .services .services-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 83.3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .services-button a {
+    padding: 20px 36px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+  }
+  .services #cursive {
+    font-size: 12px;
+    font-weight: 400;
+    font-size: italic;
+    width: 100%;
+    max-width: 83.3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services #cursive a {
+    color: white;
+  }
+  .services .services-img {
+    position: absolute;
+    opacity: 25%;
+    right: 40%;
+  }
   .realizations {
     height: 848px;
     display: -webkit-box;
