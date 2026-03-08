@@ -136,19 +136,39 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: calc(100vh - 112px);
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 108px;
+  }
+  .hero .hero-content {
+    color: white;
+    width: 100%;
+    padding: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 0 225px 24px 225px;
-  }
-  .hero .hero-content {
-    color: white;
   }
   .hero .hero-content h1 {
     font-size: 48px;
@@ -159,19 +179,20 @@ body {
     font-size: 92px;
     font-weight: 700;
     font-style: bold;
-    margin-bottom: 80px;
   }
-  .hero .hero-content p {
+  .hero p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 60.5px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-weight: 700;
-    font-style: bold;
-    gap: 15px;
-    font-size: 14px;
   }
   .hero .hero-slider {
     display: -webkit-box;
@@ -181,7 +202,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 50px;
-    margin-bottom: 96px;
   }
   .hero .hero-slider .slider-dots {
     display: -webkit-box;
@@ -472,14 +492,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 128px;
   }
   .services .services-img {
@@ -488,10 +511,14 @@ body {
     right: 1663px;
     bottom: 162px;
   }
-  .services .services-text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+  .services #cursive {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .services #cursive a {
+    font-size: 14px;
+    color: white;
   }
   .services .services-text h1 {
     font-size: 48px;
@@ -504,11 +531,6 @@ body {
     font-weight: 400;
     font-style: normal;
     padding-bottom: 28px;
-  }
-  .services .services-text #cursive {
-    font-size: 14px;
-    font-weight: 400;
-    font-style: italic;
   }
   .services .services-text .services-offers {
     display: -webkit-box;
@@ -1502,7 +1524,7 @@ body {
     width: 225px;
     height: 227px;
     top: 34%;
-    right: 55%;
+    right: 78%;
   }
   .hero {
     height: 610px;
@@ -1949,7 +1971,7 @@ body {
   .services .services-img {
     position: absolute;
     opacity: 25%;
-    right: 40%;
+    right: 70%;
   }
   .realizations {
     height: 848px;

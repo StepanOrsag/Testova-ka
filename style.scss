@@ -119,15 +119,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: calc(100vh - 112px);
+    width: 100%;
 
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 108px;
 
-    padding: 0 225px 24px 225px;
 
     .hero-content {
         color: $text-color;
+        width: 100%;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
        
         h1 {
             font-size: 48px;
@@ -138,23 +146,21 @@ body {
             font-size: 92px;
             font-weight: 700;
             font-style: bold;
-            margin-bottom: 80px;
         }
-        p{
-            display: flex;
-            align-items: center;
-            font-weight: 700;
-            font-style:bold;
-            gap: 15px;
-            font-size: 14px;
-        }
+    }
+    p{
+        display: flex;
+        width: 100%;
+        padding: 0 10%;
+        margin-bottom: 60.5px;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .hero-slider {
         display: flex;
         align-items: center;
         gap: 50px;
-        margin-bottom: 96px;
 
         .slider-dots {
             display: flex;
@@ -419,21 +425,30 @@ body {
     padding-right: 128px;
     background-color: $light-color;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position:relative;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     gap: 128px;
 
     .services-img{
-    position: absolute;
-    top: 165px;
-    right: 1663px;
-    bottom: 162px;
-}
+        position: absolute;
+        top: 165px;
+        right: 1663px;
+        bottom: 162px;
+    }
+    #cursive{
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+
+        a{
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
 
     .services-text {
-        flex:1;
-
         h1 {
             font-size: 48px;
             font-weight: 700;
@@ -445,11 +460,6 @@ body {
             font-weight: 400;
             font-style: normal;
             padding-bottom: 28px;
-        }
-        #cursive{
-            font-size: 14px;
-            font-weight: 400;
-            font-style: italic;
         }
         .services-offers {
                 display: flex;
@@ -1249,7 +1259,7 @@ body {
         width: 225px;
         height: 227px;
         top: 34%;
-        right: 55%;
+        right: 78%;
     }
     .hero{
         height: 610px;
@@ -1580,7 +1590,7 @@ body {
         .services-img{
             position: absolute; 
             opacity: 25%;
-            right: 40%;
+            right: 70%;
         }
     }
 
