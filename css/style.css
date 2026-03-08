@@ -316,7 +316,7 @@ body {
     -webkit-column-gap: 25px;
        -moz-column-gap: 25px;
             column-gap: 25px;
-    row-gap: 8px;
+    row-gap: 9px;
   }
   .introduction .our-abilities > div img {
     grid-area: icon;
@@ -1439,6 +1439,279 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .site-header {
+    height: 68px;
+    background-color: #031531;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .site-header .main .logo img {
+    width: 180px;
+    height: 36px;
+  }
+  .site-header .main .nav-main {
+    display: none;
+  }
+  .site-header .second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+  }
+  .site-header .second .hamburger-menu {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 20px;
+    width: 20px;
+  }
+  .site-header .second .search-btn {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 20px;
+    width: 20px;
+    background-color: #031531;
+    border: none;
+  }
+  .site-header .second .nav-second, .site-header .second .language-switch, .site-header .second .eshop {
+    display: none;
+  }
+  .hero-img {
+    position: absolute;
+    width: 225px;
+    height: 227px;
+    top: 34%;
+    right: 55%;
+  }
+  .hero {
+    height: 610px;
+    width: 100%;
+    background-image: url("/pictures/home-picture.jpg");
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .hero .hero-content {
+    height: 422px;
+    width: 83.3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .hero .hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .hero .hero-content h2 {
+    font-size: 52px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .hero .hero-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 32px;
+  }
+  .hero .hero-slider .slider-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .hero .hero-slider .slider-dots .dot {
+    width: 38px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .hero .hero-slider .slider-dots .dot.active {
+    background-color: #1955A6;
+  }
+  .hero .hero-slider .slider-arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2px;
+  }
+  .hero .hero-slider .slider-arrows .arrow {
+    width: 36px;
+    height: 36px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .hero .hero-slider .slider-arrows .arrow.left {
+    background-color: #000000;
+  }
+  .hero .hero-slider .slider-arrows .arrow.right {
+    background-color: #1955A6;
+  }
+  .introduction {
+    height: 670px;
+    background-color: #031531;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introduction .about-us {
+    height: 348px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 83.3%;
+    text-align: center;
+    gap: 14px;
+  }
+  .introduction .about-us h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .introduction .about-us p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  .introduction .about-us a {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 36px;
+    background-color: #1955A6;
+    text-decoration: none;
+  }
+  .introduction .our-abilities {
+    height: 322px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 83.3%;
+    gap: 25px;
+  }
+  .introduction .our-abilities > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "icon title" "icon text";
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    row-gap: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .introduction .our-abilities > div img {
+    grid-area: icon;
+  }
+  .introduction .our-abilities > div h2 {
+    grid-area: title;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .introduction .our-abilities > div p {
+    grid-area: text;
+    font-size: 14px;
+    font-weight: 400;
+  }
   .materials {
     height: 580px;
     background-image: url(/pictures/materials-bg.jpg);
