@@ -1201,6 +1201,119 @@ body {
 //Mobile style
 @media (max-width: 767px) {
 
+    .realizations{
+        height: 848px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $dark-color;
+
+        .realizations-text{
+            height: 468px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 83.3%;
+
+            .text-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 20px;
+
+                h1{
+                    font-size: 36px;
+                    font-weight: 700;
+                    white-space: nowrap;
+
+                }
+                p{
+                    line-height: 28px;
+                    font-size: 16px;
+                }
+                .hotel-fabrika{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $accent-color;
+                }
+
+                .realizations-link{
+                    padding: 20px 36px;
+                    font-size: 12px;
+                    background-color: $accent-color;
+                    color: $text-color;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        .realizations-image{
+            height: 380px;
+            background-image: url("/pictures/realizations-bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+        .selector{
+            position: absolute;
+            height: 848px;
+            width: 80%;
+
+            .realizations-dots{
+                display: flex;
+                gap: 15px;
+                position: absolute;
+                top: 46%;
+            
+                .dot {
+                    width: 35px;
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &.active{
+                        background-color: $accent-color;
+                    
+                    }
+
+                }
+            }
+            .realizations-arrows {
+                display: flex;
+                position: absolute;
+                top: 88.21%;
+                left: 33%;
+                gap: 2px;
+                .arrow {
+                    width: 50px;
+                    height: 50px;
+                    border: none;
+                    color: $text-color;
+                    font-size: 20px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.3s;
+
+                    &.left {
+                        background-color: #000000;
+                    }
+
+                    &.right {
+                        background-color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+
 
     .more{
         height: 1004px;
