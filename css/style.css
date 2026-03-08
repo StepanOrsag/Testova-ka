@@ -1439,6 +1439,126 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .more {
+    height: 1004px;
+    background-color: #031531;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .more .more-image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 380px;
+    background-image: url("/pictures/more-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .more .more-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 624px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+    max-width: 82.93%;
+  }
+  .more .more-text .eshop {
+    padding: 20px 36px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #1955A6;
+  }
+  .more .more-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .more .more-text .accordion {
+    width: 100%;
+    height: 408px;
+  }
+  .more .more-text .accordion .accordion-item {
+    padding: 2.45% 0;
+  }
+  .more .more-text .accordion .accordion-item .accordion-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .more .more-text .accordion .accordion-item .accordion-header .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    color: #1955A6;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .more .more-text .accordion .accordion-item .accordion-header h3 {
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 700;
+  }
+  .more .more-text .accordion .accordion-item .accordion-content {
+    padding-left: 44px;
+    padding-top: 15px;
+  }
+  .more .more-text .accordion .accordion-item .accordion-content p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .more .more-text .accordion .accordion-item .accordion-content a {
+    font-size: 16px;
+    color: #6094F8;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .more .more-text .accordion .accordion-item .accordion-content a:hover {
+    text-decoration: underline;
+  }
   .current {
     height: 953px;
     background-color: #020D1E;
